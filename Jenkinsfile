@@ -99,9 +99,10 @@ pipeline{
                 
                 script{
                     
-                    sh 'docker build -t chandu5562/ .'
-                    sh 'docker image tag $JOB_NAME:v1.$BUILD_ID chandu5562/$JOB_NAME:v1.$BUILD_ID'
-                    sh 'docker image tag $JOB_NAME:v1.$BUILD_ID chandu5562/$JOB_NAME:latest'
+                    sh 'docker build -t webapp .'
+                    sh 'docker image tag webapp 13.233.58.184:8085/webapp:v1'
+   
+                    
                 }
              }    
           }            
