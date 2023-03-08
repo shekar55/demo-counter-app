@@ -105,7 +105,13 @@ pipeline{
                     
                 }
              }    
-          }            
- }
+         }
+        
+        stage("Docker Push"){
+        withCredentials([string(credentialsId: 'dockernexus', variable: 'dockernexus')]) {
+          sh "docker login -u admin -p ${dockernexus} 13.233.58.184:8085"
+        }
+        sh "docker push 13.233.58.184:8085/webapp:v1"
+ }            
 }
     
