@@ -88,7 +88,7 @@ pipeline{
                         nexusVersion: 'nexus2',
                         protocol: 'http', 
                         repository: 'loglabs-maven-release',
-                        version:  '$(readPomVersion.version)'
+                        version:  '1.0.1'
                 }  
             }   
         }
