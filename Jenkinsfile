@@ -115,7 +115,8 @@ pipeline{
         }
         sh "docker push 13.233.58.184:8085/webapp:v1"
         } 
-            }
+            }   
+    }
  }            
 }
     
