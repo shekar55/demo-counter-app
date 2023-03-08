@@ -86,7 +86,7 @@ pipeline{
                         credentialsId: 'nexus',
                         groupId: 'com.example',
                         nexusUrl: '13.127.250.135:8081',
-                        nexusVersion: 'nexus2',
+                        nexusVersion: 'nexus3',
                         protocol: 'http', 
                         repository: 'demoapp-release',
                         version:  '$(readPomVersion.version)'
