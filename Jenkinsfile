@@ -82,12 +82,12 @@ pipeline{
                                 type: 'jar'
                             ]
                         ], 
-                        credentialsId: 'nexus-auth',
+                        credentialsId: 'nexus',
                         groupId: 'com.example',
-                        nexusUrl: '54.254.242.18:8081',
+                        nexusUrl: '13.127.250.135:8081',
                         nexusVersion: 'nexus2',
                         protocol: 'http', 
-                        repository: 'demo-app-release',
+                        repository: 'loglabs-maven-release',
                         version:  '$(readPomVersion.version)'
                 }  
             }   
